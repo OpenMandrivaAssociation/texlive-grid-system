@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-grid-system
 Version:	0.1
-Release:	2
+Release:	3
 Summary:	Page organisation, modelled on CSS facilities
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/grid-system
