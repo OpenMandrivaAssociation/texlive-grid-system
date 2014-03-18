@@ -1,11 +1,11 @@
-# revision 32704
+# revision 32981
 # category Package
 # catalog-ctan /macros/latex/contrib/grid-system
-# catalog-date 2014-01-17 18:07:29 +0100
+# catalog-date 2014-02-16 20:01:44 +0100
 # catalog-license apache2
-# catalog-version 0.2
+# catalog-version 0.3.0
 Name:		texlive-grid-system
-Version:	0.2
+Version:	0.3.0
 Release:	1
 Summary:	Page organisation, modelled on CSS facilities
 Group:		Publishing
