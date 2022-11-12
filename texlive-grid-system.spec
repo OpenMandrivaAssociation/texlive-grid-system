@@ -1,18 +1,12 @@
-# revision 32981
-# category Package
-# catalog-ctan /macros/latex/contrib/grid-system
-# catalog-date 2014-02-16 20:01:44 +0100
-# catalog-license apache2
-# catalog-version 0.3.0
 Name:		texlive-grid-system
-Version:	0.3.0
-Release:	6
+Version:	32981
+Release:	1
 Summary:	Page organisation, modelled on CSS facilities
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/grid-system
 License:	APACHE2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/grid-system.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/grid-system.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/grid-system.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/grid-system.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ system as known from CSS grid systems. The facility is useful
 for creating box layouts as used in brochures.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -41,7 +35,7 @@ for creating box layouts as used in brochures.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
